@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PAGE LOGIN</title>
+</head>
+<body>
+    <h1>Hi</h1>
+    <form th:action="@{/add}" th:object="${account}" method="post">
+        <input type="text" th:field="*{cccd}" id="cccd"  placeholder="Can cuoc cong dan">
+        <input type="text" th:field="*{userName}" id="userName"  placeholder="Ho va ten">
+        <input type="submit" value="dk">
+    </form>
+</body>
+</html>
